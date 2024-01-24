@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical documentation page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
+        <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
+        <li>
+          <a class="nav-link" href="#Other_Important_Aspects"
+            >Other Important Aspects</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            HTML, or HyperText Markup Language, is the foundation of every web
+            page you see. It's a simple yet powerful language used to structure
+            and define the content of a web page, telling browsers how to
+            display text, images, links, and other elements.
+          </p>
+          <p>Think of HTML as the skeleton of a website:</p>
+          <ul>
+            <li>
+              Building Blocks: It's made up of elements, like headings,
+              paragraphs, links, and images, represented by tags such as
+              &lt;h1&gt;, &lt;p&gt;, and &lt;img&gt;. These tags describe the
+              type of content and how it should be displayed.
+            </li>
+            <li>
+              Structure and Organization: These elements are organized within
+              other elements, creating a hierarchy that defines the page's
+              structure and layout.
+            </li>
+            <li>
+              Connecting the Dots: Hyperlinks (&lt;a&gt;) connect your page to
+              other web pages, creating the hypertext aspect of the language and
+              allowing users to navigate the web.
+            </li>
+          </ul>
+          <p>This is how a basic structure of html looks like:</p>
+          <code>
+            &lt;!DOCTYPE html&gt;<br />
+            &lt;html&gt;<br />
+            &lt;head&gt;<br />
+            &lt;title&gt;Page Title&lt;/title&gt;<br />
+            &lt;/head&gt;<br />
+            &lt;body&gt;<br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Elements">
+        <header>HTML Elements</header>
+        <article>
+          <p>
+            HTML elements are the building blocks that make up the structure and
+            content of a web page. They define everything from headings and
+            paragraphs to images, links, and forms. Each element has a specific
+            purpose and is represented by a tag, which is a keyword enclosed in
+            angle brackets
+          </p>
+          <p>
+            Here's a list of common HTML elements and their descriptions,
+            organized into categories:
+          </p>
+          <p>Document Structure:</p>
+          <ul>
+            <li>&lt;!DOCTYPE html&gt;: Declares the document as HTML5.</li>
+            <li>
+              &lt;html&gt;: Root element that encloses all other elements.
+            </li>
+            <li>
+              &lt;head&gt;: Contains metadata like title, links to stylesheets
+              and scripts.
+            </li>
+            <li>&lt;body&gt;: Contains the visible content of the page.</li>
+          </ul>
+
+          <p>Text and Headings:</p>
+          <ul>
+            <li>
+              &lt;h1&gt; to &lt;h6&gt;: Headings, with &lt;h1&gt; being the most
+              important and &lt;h6&gt; the least important.
+            </li>
+            <li>&lt;p&gt;: Paragraph of text.</li>
+            <li>&lt;br&gt;: Line break.</li>
+          </ul>
+
+          <p>Lists:</p>
+          <ul>
+            <li>&lt;ul&gt;: Unordered list (bulleted).</li>
+            <li>&lt;ol&gt;: Ordered list (numbered).</li>
+            <li>&lt;li&gt;: List item.</li>
+          </ul>
+          <p>Formatting:</p>
+          <ul>
+            <li>&lt;strong&gt;: Emphasizes text (usually bold).</li>
+            <li>&lt;em&gt;: Emphasizes text (usually italic).</li>
+            <li>&lt;mark&gt;: Highlights text.</li>
+            <li>&lt;small&gt;: Renders text smaller.</li>
+            <li>&lt;del&gt;: Strikes through text.</li>
+            <li>&lt;ins&gt;: Underlines text.</li>
+            <li>&lt;sub&gt;: Subscript text.</li>
+            <li>&lt;sup&gt;: Superscript text.</li>
+            <li>&lt;blockquote&gt;: Block quote for long quotations.</li>
+          </ul>
+          <p>Examples of using html elements:</p>
+          <p>
+            using paragraph element:
+            <code>&lt;p&gt;Hello, World!&lt;/p&gt;</code>
+          </p>
+          <p>
+            using anchor element:
+            <code>&lt;a href="give a link to website"&gt;&lt;/a&gt;</code>
+          </p>
+          <p>
+            using image element:
+            <code
+              >&lt;img src"add the source of the image here" alt="add an
+              alternative text here"&gt;</code
+            >
+          </p>
+          <p>
+            using input element:
+            <code
+              >&lt;input type="text" id="username" name="username"
+              required&gt;</code
+            >
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Attributes">
+        <header>HTML Attributes</header>
+        <article>
+          <p>
+            HTML attributes provide additional information about an HTML
+            element, modifying its behavior, appearance, or functionality. They
+            are written within the opening tag of an element, following a
+            specific format:
+          </p>
+          <p>Common Attributes:</p>
+          <ul>
+            <li>
+              id: Unique identifier for an element, used for styling and
+              scripting.
+            </li>
+            <li>
+              class: Assigns one or more classes to an element, used for
+              grouping and styling.
+            </li>
+            <li>style: Applies inline CSS styles to an element.</li>
+            <li>
+              href: Specifies the link destination for anchor (&lt;a&gt;)
+              elements.
+            </li>
+            <li>
+              src: Specifies the source of an image (&lt;img&gt;) or external
+              resource.
+            </li>
+            <li>
+              alt: Provides alternative text for images, used for accessibility
+              and SEO.
+            </li>
+            <li>title: Provides a tooltip for an element when hovering.</li>
+            <li>
+              width and height: Define the dimensions of an element (often used
+              for images).
+            </li>
+          </ul>
+          <p>Importance of Attributes:</p>
+          <ul>
+            <li>
+              Content Enhancement: Attributes enrich the information provided by
+              HTML elements, adding context and functionality.
+            </li>
+            <li>
+              Styling and Layout: They can be used to control the appearance and
+              positioning of elements using CSS.
+            </li>
+            <li>
+              Accessibility: Attributes like alt and title improve accessibility
+              for users with disabilities.
+            </li>
+            <li>
+              Interactivity: Some attributes enable interactive elements, like
+              forms and media players.
+            </li>
+          </ul>
+          <p>
+            By understanding and using HTML attributes effectively, you can
+            create more structured, informative, and interactive web pages.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Other_Important_Aspects">
+        <header>Other Important Aspects</header>
+        <p>Here are some other important aspects of HTML to keep in mind:</p>
+        <ol>
+          <li>Document Structure:</li>
+          <ul>
+            <li>
+              HTML documents have a specific structure, starting with the
+              &lt;!DOCTYPE html&gt; declaration and containing a &lt;html&gt;,
+              &lt;head&gt;, and &lt;body&gt; section.
+            </li>
+            <li>
+              The &lt;head&gt; contains metadata like the title, character
+              encoding, and links to stylesheets and scripts.
+            </li>
+            <li>The &lt;body&gt; contains the visible content of the page.</li>
+          </ul>
+          <li>Semantic Structure:</li>
+          <ul>
+            <li>
+              HTML5 introduced elements with semantic meaning (like
+              &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;,
+              &lt;aside&gt;, &lt;footer&gt;), conveying the structure and
+              purpose of content, improving accessibility and SEO.
+            </li>
+          </ul>
+          <li>Validity vs. Correctness:</li>
+          <ul>
+            <li>
+              Valid HTML adheres to the rules of the HTML specification,
+              ensuring proper structure and interpretation by browsers.
+            </li>
+            <li>
+              Correct HTML might not be strictly valid but still renders
+              correctly in browsers.
+            </li>
+            <li>It's generally good practice to aim for valid HTML.</li>
+          </ul>
+          <li>Separation of Concerns:</li>
+          <ul>
+            <li>
+              HTML focuses on content and structure, while CSS handles styling
+              and JavaScript adds interactivity. This separation makes code
+              easier to maintain and update.
+            </li>
+          </ul>
+          <li>Accessibility:</li>
+          <ul>
+            <li>
+              HTML features like alt attributes for images, semantic elements,
+              heading structure, and proper form labeling make content
+              accessible for users with disabilities.
+            </li>
+          </ul>
+          <li>Cross-Browser Compatibility:</li>
+          <ul>
+            <li>
+              Different browsers may render HTML slightly differently. It's
+              essential to test your code in various browsers to ensure
+              consistency.
+            </li>
+          </ul>
+          <li>Responsive Design:</li>
+          <ul>
+            <li>
+              Modern web design emphasizes responsiveness, adapting layouts to
+              different screen sizes and devices for optimal viewing
+              experiences. HTML, in combination with CSS and JavaScript, enables
+              responsive design.
+            </li>
+          </ul>
+          <li>Best Practices:</li>
+          <ul>
+            <li>Use semantic elements appropriately.</li>
+            <li>Structure content logically.</li>
+            <li>Write clean and readable code.</li>
+            <li>Validate your HTML.</li>
+            <li>Prioritize accessibility.</li>
+            <li>Test across multiple browsers.</li>
+            <li>Keep learning and exploring!</li>
+          </ul>
+        </ol>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              "for more information about html refer
+              <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+                HTML wikipedia</a
+              >
+              "
+            </li>
+          </ul>
+          <p>thank you so much for visiting my website</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
